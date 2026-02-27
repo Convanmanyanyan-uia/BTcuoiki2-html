@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager giả lập</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📋 Task Manager (Giả lập)</h1>
+            <button id="addTaskBtn" class="btn-add">➕ Add Task</button>
+        </header>
+
+        <main>
+            <table id="taskTable">
+                <thead>
+                    <tr>
+                        <th>PID</th>
+                        <th>Tên Task</th>
+                        <th>CPU (%)</th>
+                        <th>RAM (MB)</th>
+                        <th>Trạng thái</th>
+                        <th>Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody id="taskList">
+                    <!-- Dữ liệu sẽ được render bằng JavaScript -->
+                </tbody>
+            </table>
+        </main>
+
+        <footer>
+            <p>⏱️ Dữ liệu được cập nhật ngẫu nhiên – chỉ mang tính mô phỏng</p>
+        </footer>
+    </div>
+
+    <!-- Thứ tự script: dữ liệu -> giao diện -> chức năng -> khởi chạy -->
+    <script src="data.js"></script>
+    <script src="ui.js"></script>
+    <script src="functions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
